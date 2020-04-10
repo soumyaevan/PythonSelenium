@@ -1,5 +1,6 @@
 import openpyxl
 
+# this function reads single data
 def readData(rowNamwe, colName):
     book = openpyxl.load_workbook('Data.xlsx')
     sheet = book.active
