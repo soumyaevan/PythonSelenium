@@ -1,6 +1,5 @@
 import openpyxl
 
-
 def readData(rowNamwe, colName):
     book = openpyxl.load_workbook('Data.xlsx')
     sheet = book.active
@@ -28,9 +27,5 @@ def getDataForARow(testName):
                 Dict[sheet.cell(row=1, column=c).value] = sheet.cell(row=r, column=c).value
     return Dict
 
-# print(getDataForARow('TestCase2'))
-
 for k,v in getDataForARow('TestCase2').items():
     print(k + " : " + v)
-
-# print(readData('TestCase2','username'))
