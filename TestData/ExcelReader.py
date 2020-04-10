@@ -1,8 +1,5 @@
 import openpyxl
-# book = openpyxl.load_workbook('Data.xlsx')
-# sheet = book.active
-# cell = sheet.cell(row=1,column=1)
-# print(cell.value)
+
 
 def readData(rowNamwe, colName):
     book = openpyxl.load_workbook('Data.xlsx')
