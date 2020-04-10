@@ -16,7 +16,7 @@ def readData(rowNamwe, colName):
                     colVal = c
                     return sheet.cell(row=rowVal, column=colVal).value
 
-#this function is used to read the entire column
+# this function is used to read the entire column
 def getDataForARow(testName):
     book = openpyxl.load_workbook('Data.xlsx')
     sheet = book.active
