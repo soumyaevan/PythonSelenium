@@ -8,7 +8,7 @@ class LoginPage:
     TxtEmail = (By.XPATH,"//input[@id='email']")
     TxtPasswd = (By.XPATH,"//input[@id='passwd']")
     BtnSubmit = (By.ID,"SubmitLogin")
-    ErrMsg = (By.XPATH,"//div[@id='center_column']/div[1]/ol/li")
+    txtErrMsg = (By.XPATH,"//div[@id='center_column']/div[1]/ol/li")
 
     def txtEmail(self):
         return self.driver.find_element(*LoginPage.TxtEmail)
@@ -20,4 +20,4 @@ class LoginPage:
         return self.driver.find_element(*LoginPage.BtnSubmit)
 
     def errMsg(self):
-        return self.driver.find_element(*LoginPage.ErrMsg)
+        return self.driver.find_element(*LoginPage.txtErrMsg)
